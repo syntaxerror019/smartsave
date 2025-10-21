@@ -24,3 +24,8 @@ As of writing this, the only way to get this Chrome extension is to download it 
 3) Once loaded, toggle the Developer Mode switch ON at the top-right corner.
 4) Press the new "Load Unpacked" button and select the unpacked/unzipped folder.
 5) The extension will show up. Make sure the toggle is turned on to enable it.
+
+## TODO
+
+* Add cross-browser syncing (firefox, safari, etc.)
+* Use a more robust saving system. (Backend DB)
