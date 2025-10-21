@@ -32,12 +32,19 @@ function restoreDraft(el) {
     if (saved && !el.value) {
       el.value = saved;
 
-      // Trigger Classroom UI update
+       // force textare expansion.
+      el.rows = Math.max(3, saved.split("\n").length);
+      el.style.minHeight = "3em"; // optional extra safety
+
+      // make sure react is aware of the change
       el.dispatchEvent(new Event("input", { bubbles: true }));
       el.dispatchEvent(new Event("change", { bubbles: true }));
+
       el.focus();
+      el.blur();
 
       console.log("[SmartSave] Restored draft: ", saved);
+      
       message(
         "Draft restored successfully by&nbsp;<a href='https://www.mileshilliard.com/' target='_blank' rel='noopener'>SmartSave for Classroom</a>", 
         icon="📂"

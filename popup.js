@@ -18,6 +18,9 @@ chrome.storage.sync.get(null, (items) => {
 
 // Clear all saved drafts
 clearBtn.addEventListener("click", () => {
+  if (!confirm("Are you sure you want to clear all saved drafts?")) {
+    return;
+  }
   chrome.storage.sync.get(null, (items) => {
     const draftKeys = Object.keys(items).filter(k => k.startsWith("draft_"));
     chrome.storage.sync.remove(draftKeys, () => {

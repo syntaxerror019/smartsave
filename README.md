@@ -13,6 +13,7 @@ This Chrome Extension automatically saves your draft as you type, syncing across
 Cross-device syncing: Pick up exactly where you left off.
 Automatic saving: No more frantic last-minute saves.
 Lightweight & discreet: Runs in the background to keep your work up-to-date.
+Local: None of your information leaves the environment. Self-contained within (Chrome Storage)[https://developer.chrome.com/docs/extensions/reference/api/storage]
 
 ## Installation
 
