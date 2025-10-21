@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "SmartSave for Classroom",
+  "version": "1.0",
+  "description": "Automatically saves and restores answers typed in Google Classroom questions.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://classroom.google.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://classroom.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+   "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon128.png"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}
