@@ -1,4 +1,4 @@
-A simple cross-device automatically syncing extension designed to save work on Google Classroom short-answer (question) posts.
+### A simple cross-device automatically syncing extension designed to save work on Google Classroom short-answer (question) posts.
 
 ## The problem
 
