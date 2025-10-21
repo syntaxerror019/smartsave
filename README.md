@@ -34,11 +34,11 @@ As of writing this, the only way to get this Chrome extension is to download it 
 
 Here are some examples of the extension in action.
 
-![alt text](photos/saved.png)
 User's draft being automatically saved.
+![alt text](photos/saved.png)
 
-![alt text](photos/start.png)
 Empty response prompt.
+![alt text](photos/start.png)
 
-![alt text](photos/interface.png)
 The extension interface window.
+![alt text](photos/interface.png)
