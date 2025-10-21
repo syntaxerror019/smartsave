@@ -42,6 +42,11 @@ function restoreDraft(el) {
         "Draft restored successfully by&nbsp;<a href='https://www.mileshilliard.com/' target='_blank' rel='noopener'>SmartSave for Classroom</a>", 
         icon="📂"
     );
+    } else {
+        message(
+            "Start typing to save your draft with&nbsp;<a href='https://www.mileshilliard.com/' target='_blank' rel='noopener'>SmartSave for Classroom</a>",
+            icon="💾"
+        );
     }
   });
 }
@@ -66,15 +71,13 @@ function message(msg, icon) {
             msgContainer.style.fontSize = "12px";
             targetDiv.appendChild(msgContainer);
         }
-        msgContainer.innerHTML = `${icon} ${msg} - <span style="font-size:10px; color:gray;">(${new Date().toLocaleTimeString()})</span>`;
+        msgContainer.innerHTML = `${icon} ${msg}&nbsp;-&nbsp;<span style="font-size:10px; color:gray;">${new Date().toLocaleTimeString()}</span>`;
         msgContainer.style.color = "black";
     } catch (e) {
         console.error("[SmartSave] Error displaying message:", e);
         console.warn("[SmartSave] Div Container likely changed due to UI update!");
     }
 }
-
-
 
 // watch out for dynamic textareas.
 const observer = new MutationObserver(() => {
