@@ -3,6 +3,7 @@
   "name": "SmartSave for Classroom",
   "version": "1.0",
   "description": "Automatically saves and restores answers typed in Google Classroom questions.",
+  "homepage_url": "https://www.mileshilliard.com",
   "permissions": ["storage"],
   "host_permissions": ["https://classroom.google.com/*"],
   "content_scripts": [

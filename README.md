@@ -29,3 +29,16 @@ As of writing this, the only way to get this Chrome extension is to download it 
 
 * Add cross-browser syncing (firefox, safari, etc.)
 * Use a more robust saving system. (Backend DB)
+
+## Screenshots
+
+Here are some examples of the extension in action.
+
+![alt text](photos/saved.png)
+User's draft being automatically saved.
+
+![alt text](photos/start.png)
+Empty response prompt.
+
+![alt text](photos/interface.png)
+The extension interface window.
